@@ -1,0 +1,9 @@
+# Ignore Eleventy dependencies inside the symlink
+**/node_modules/**
+
+# Ignore hidden files and git metadata
+**/.*/**
+
+# Exclude the root README from your DOC workspace
+src/content/docs/my-articles/README.md
+src/content/docs/my-articles/readme.md
