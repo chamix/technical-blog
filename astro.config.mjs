@@ -7,6 +7,9 @@ export default defineConfig({
     integrations: [
         starlight({
             title: 'Tech Architecture Blog',
+            customCss: [
+                './src/styles/custom.css',
+            ],
             social: [
                 {
                     icon: 'github',
