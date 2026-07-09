@@ -13,6 +13,15 @@ export default defineConfig({
             components: {
                 Head: './src/components/Head.astro',
             },
+            head: [
+                {
+                    tag: 'meta',
+                    attrs: {
+                        name: 'google-site-verification',
+                        content: 'AbRiqtriATXcdbrAAxzdRuX8Xv2D_Yjvfw5F_5CvC50',
+                    },
+                },
+            ],
             defaultLocale: 'root',
             locales: {
                 root: {
