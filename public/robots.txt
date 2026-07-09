@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://technical-blog-6xs.pages.dev/sitemap-index.xml
