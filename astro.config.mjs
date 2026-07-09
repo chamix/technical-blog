@@ -10,6 +10,9 @@ export default defineConfig({
         sitemap(),
         starlight({
             title: 'Tech Architecture Blog',
+            components: {
+                Head: './src/components/Head.astro',
+            },
             defaultLocale: 'root',
             locales: {
                 root: {

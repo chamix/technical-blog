@@ -1,0 +1,48 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+import { posix } from 'node:path';
+
+const { entry } = Astro.locals.starlightRoute;
+const isArticle = entry.id.startsWith('my-articles/');
+
+// Eagerly imported map of every optimized asset, keyed by its project-root-relative path.
+// Lets us resolve a markdown-relative image reference to its final, hashed public URL
+// without hardcoding which articles have a header image.
+const images = import.meta.glob('/src/assets/**/*.{webp,png,jpg,jpeg,gif}', {
+	eager: true,
+	import: 'default',
+}) as Record<string, { src: string }>;
+
+function findHeaderImageSrc(): string | undefined {
+	const match = entry.body?.trimStart().match(/^!\[[^\]]*\]\(([^)\s]+)\)/);
+	if (!match || !match[1]) return undefined;
+
+	const articleDir = posix.dirname(entry.filePath.replace(/\\/g, '/'));
+	const resolvedPath = posix.normalize(posix.join(articleDir, match[1]));
+	return images[`/${resolvedPath}`]?.src;
+}
+
+const headerImageSrc = isArticle ? findHeaderImageSrc() : undefined;
+
+const canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+
+const jsonLd = isArticle
+	? {
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: entry.data.title,
+			description: entry.data.description,
+			...(entry.data.publishDate ? { datePublished: entry.data.publishDate.toISOString() } : {}),
+			author: {
+				'@type': 'Person',
+				name: 'Camilo',
+				url: 'https://www.linkedin.com/in/ernestocamilovera/',
+			},
+			...(canonicalUrl ? { mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl } } : {}),
+			...(headerImageSrc ? { image: new URL(headerImageSrc, Astro.site).href } : {}),
+		}
+	: undefined;
+---
+
+<Default {...Astro.props} />
+{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
