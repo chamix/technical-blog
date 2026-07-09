@@ -1,13 +1,21 @@
 ---
 title: Technical Logbook
-description: Get started building your docs site with Starlight.
+description: "Bitácora técnica de Camilo: arquitectura de software, cloud (Azure/AWS/GCP) e IA generativa, contadas desde casos reales."
+head:
+  - tag: title
+    content: "Technical Logbook | Tech Arch, Development, Cloud e IA"
 hero:
-  tagline: Camilo | Platform Engineering & Development
+  tagline: Camilo — Technology architecture, software development, cloud e IA generativa, contadas desde la trinchera
   image:
     file: ../../assets/index-main.webp
-  actions:
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+Llevo más de 15 años diseñando sistemas complejos a gran escala. Esta bitácora nació hace poco, cuando la IA generativa empezó a cuestionar varias certezas de arquitectura que daba por sentadas — y decidí documentar el proceso mientras lo vivo: los callejones sin salida, las decisiones a mitad camino, y lo que realmente cambia cuando un equipo la adopta en producción.
+
+<CardGrid>
+	<LinkCard title="La Mutación Epistemológica de la Interacción Humano-IA" href="/my-articles/articulo-human-ai-interacion-i/" />
+	<LinkCard title="¿Quién gobierna el desgobierno de la IA?" href="/my-articles/articulo-gobierno-agentes-ia/" />
+	<LinkCard title="Raise the Level of Abstraction" href="/my-articles/articulo_raise_the_level_of_abstraction/" />
+</CardGrid>

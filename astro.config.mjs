@@ -10,6 +10,13 @@ export default defineConfig({
         sitemap(),
         starlight({
             title: 'Tech Architecture Blog',
+            defaultLocale: 'root',
+            locales: {
+                root: {
+                    label: 'Español',
+                    lang: 'es',
+                },
+            },
             customCss: [
                 './src/styles/custom.css',
             ],
