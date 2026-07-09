@@ -9,7 +9,6 @@ seriesPart: 2
 
 ![Una zapatilla de running suspendida en el aire sobre un sendero de montaña, dejando atrás una estela de cables y ondas de sonido enredadas en vez de polvo](../../../assets/my-articles/articulo-human-ai-interacion-II/ART-005-header.webp)
 
-# Le dicté el feedback por voz a la IA. Tardé el triple en arreglarlo.
 ### Por qué la voz, que promete aliviar la fatiga de tipear con la IA, termina generando más trabajo del que ahorra en tareas de co-pensamiento complejo.
 
 *por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*

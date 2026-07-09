@@ -9,7 +9,6 @@ seriesPart: 4
 
 ![Una caja de texto rectangular e iluminada flotando sobre un tablero infinito tipo ajedrez, rodeada de bloques geométricos simples hundidos a medio construir](../../../assets/my-articles/articulo-human-ai-interacion-IV/ART-007-header.webp)
 
-# Lo que aprendí escribiendo, dictando y escuchando con IA — y lo que todavía no sé
 ### Cierre de la serie: qué deberían hacer las interfaces de IA con todo lo que aprendimos sobre escribir, dictar y escuchar — y la pregunta incómoda que queda abierta.
 
 *por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*

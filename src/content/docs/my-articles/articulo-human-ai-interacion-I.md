@@ -9,7 +9,6 @@ seriesPart: 1
 
 ![Una notebook con la pantalla en blanco, sola en medio de un desierto al amanecer, con huellas de pisadas que se detienen frente a ella](../../../assets/my-articles/articulo-human-ai-interacion-I/ART-004-header.webp)
 
-# Escribo más que nunca desde que uso IA. Y no es un error.
 ### La paradoja detrás del co-pensamiento con modelos de lenguaje: por qué la promesa de 'escribir menos' resultó ser exactamente al revés.
 
 *por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*

@@ -1,9 +1,13 @@
 ---
-title: "Raise the Level of Abstraction"
+title: "Raise the Level of Abstraction: Del Assembler a la Inteligencia Artificial Generativa"
+description: "Un recorrido histórico de la abstracción en software, del Assembler a la IA generativa, y cómo construí una célula de agentes bajo Clean Architecture y TDD para probarlo."
+publishDate: 2026-06-15
+tags: ["ai", "genai", "architecture", "nodejs", "explainer"]
 ---
 
-# Raise the Level of Abstraction: Del Assembler a la Inteligencia Artificial Generativa
+### Un recorrido histórico de la abstracción en software, del Assembler a la IA generativa, y cómo construí una célula de agentes bajo Clean Architecture y TDD para probarlo.
 
+*por Camilo — Junio 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 ## Introducción: De la Práctica Corporativa a la Memoria Colectiva
 
 Últimamente estuve trabajando de manera más intensa y sistemática con las nuevas herramientas de IA. Luego de una serie de cursos mandatorios que tuve que hacer en la empresa en la que trabajo, comencé a utilizar Gemini para desarrollo. En mi caso, decidí hacer un proyecto para "aprender haciendo" (*learn by doing*), que es una de las formas en las que a mí mejor se me da aprender algo nuevo. 
@@ -232,7 +236,3 @@ Si te interesa profundizar en los detalles técnicos de esta implementación o e
 * **Aider.** *Herramienta agéntica de programación en pareja por línea de comandos y mapeo de espacios de trabajo locales (Repository Map)*. [GitHub - Aider](https://github.com/paul-gauthier/aider).
 * **Anthropic API.** *Documentación técnica sobre el uso de herramientas de sistema y ejecución local de agentes avanzados (Tool Use)*. [Anthropic - Claude API Documentation (Tool use)](https://platform.claude.com/docs/en/home).
 
----
-
-*by chamix2@hotmail.com*
-*Junio 2026*
