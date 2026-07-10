@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+
+// Starlight's PageTitle contract requires id="_top" on the <h1> (see
+// @astrojs/starlight/schemas/components.ts); the constant isn't publicly exported.
+const PAGE_TITLE_ID = '_top';
+
+const { entry } = Astro.locals.starlightRoute;
+
+const hasSeries = typeof entry.data.series === 'string' && entry.data.series.length > 0;
+const siblings = hasSeries
+	? (await getCollection('docs', ({ data }) => data.series === entry.data.series)).sort(
+			(a, b) => (a.data.seriesPart ?? 0) - (b.data.seriesPart ?? 0)
+		)
+	: [];
+---
+
+<h1 id={PAGE_TITLE_ID}>{entry.data.title}</h1>
+{
+	hasSeries && (
+		<p class="series-badge">
+			Parte {entry.data.seriesPart} de {siblings.length}
+		</p>
+	)
+}
+
+<style>
+	@layer starlight.core {
+		h1 {
+			margin-top: 1rem;
+			font-size: var(--sl-text-h1);
+			line-height: var(--sl-line-height-headings);
+			font-weight: 600;
+			color: var(--sl-color-white);
+		}
+	}
+
+	.series-badge {
+		margin-top: 0.25rem;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+	}
+</style>

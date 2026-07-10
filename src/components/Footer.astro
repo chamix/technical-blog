@@ -1,0 +1,114 @@
+---
+import EditLink from 'virtual:starlight/components/EditLink';
+import LastUpdated from 'virtual:starlight/components/LastUpdated';
+import Pagination from 'virtual:starlight/components/Pagination';
+import config from 'virtual:starlight/user-config';
+import { Icon } from '@astrojs/starlight/components';
+import { getCollection } from 'astro:content';
+
+const { entry } = Astro.locals.starlightRoute;
+
+const hasSeries = typeof entry.data.series === 'string' && entry.data.series.length > 0;
+const siblings = hasSeries
+	? (await getCollection('docs', ({ data }) => data.series === entry.data.series)).sort(
+			(a, b) => (a.data.seriesPart ?? 0) - (b.data.seriesPart ?? 0)
+		)
+	: [];
+const next = hasSeries
+	? siblings.find((s) => (s.data.seriesPart ?? 0) === (entry.data.seriesPart ?? 0) + 1)
+	: undefined;
+---
+
+<footer class="sl-flex">
+	<div class="meta sl-flex">
+		<EditLink />
+		<LastUpdated />
+	</div>
+	<Pagination />
+
+	{
+		next && (
+			<a class="series-next" href={`/${next.id}/`}>
+				<span>
+					Siguiente artículo de la serie
+					<br />
+					<span class="series-next-title">{next.data.title}</span>
+				</span>
+				<Icon name="right-arrow" size="1.5rem" />
+			</a>
+		)
+	}
+
+	{
+		config.credits && (
+			<a class="kudos sl-flex" href="https://starlight.astro.build">
+				<Icon name={'starlight'} /> {Astro.locals.t('builtWithStarlight.label')}
+			</a>
+		)
+	}
+</footer>
+
+<style>
+	@layer starlight.core {
+		footer {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+		.meta {
+			gap: 0.75rem 3rem;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 3rem;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-3);
+		}
+		.meta > :global(p:only-child) {
+			margin-inline-start: auto;
+		}
+
+		.kudos {
+			align-items: center;
+			gap: 0.5em;
+			margin: 1.5rem auto;
+			font-size: var(--sl-text-xs);
+			text-decoration: none;
+			color: var(--sl-color-gray-3);
+		}
+		.kudos:hover {
+			color: var(--sl-color-white);
+		}
+	}
+
+	@layer starlight.components {
+		.kudos :global(svg) {
+			color: var(--sl-color-orange);
+		}
+	}
+
+	.series-next {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		gap: 0.5rem;
+		width: 100%;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		padding: 1rem;
+		text-decoration: none;
+		color: var(--sl-color-gray-2);
+		box-shadow: var(--sl-shadow-md);
+		text-align: end;
+	}
+	.series-next:hover {
+		border-color: var(--sl-color-gray-2);
+	}
+	.series-next-title {
+		color: var(--sl-color-white);
+		font-size: var(--sl-text-2xl);
+		line-height: var(--sl-line-height-headings);
+	}
+	.series-next :global(svg) {
+		flex-shrink: 0;
+	}
+</style>

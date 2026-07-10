@@ -12,6 +12,8 @@ export default defineConfig({
             title: 'Tech Architecture Blog',
             components: {
                 Head: './src/components/Head.astro',
+                PageTitle: './src/components/PageTitle.astro',
+                Footer: './src/components/Footer.astro',
             },
             head: [
                 {
