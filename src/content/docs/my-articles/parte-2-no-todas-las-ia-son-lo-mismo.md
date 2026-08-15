@@ -9,10 +9,9 @@ seriesPart: 2
 
 ![Una máquina expendedora de juguete vacía por dentro, con fichas doradas cayendo en espiral por una rampa hacia la salida, bajo luz cálida](../../../assets/my-articles/parte-2-no-todas-las-ia-son-lo-mismo/no-todas-las-ia-son-lo-mismo-parte-2-header.webp)
 
-# No es el modelo, es lo que le construís alrededor
 ### Qué es realmente un LLM, por qué un modelo no es lo mismo que la herramienta que lo envuelve, y qué estás pagando en realidad cuando pagás por token.
 
-*por Camilo — Agosto 14 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — Agosto 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

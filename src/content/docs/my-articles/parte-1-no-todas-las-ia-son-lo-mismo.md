@@ -10,10 +10,9 @@ seriesPart: 1
 
 ![Un robot de juguete vintage parado en un prado soleado, con el pecho abierto del que florece una flor con pétalos veteados de líneas de circuito brillante](../../../assets/my-articles/parte-1-no-todas-las-ia-son-lo-mismo/no-todas-las-ia-son-lo-mismo-parte-1-header.webp)
 
-# De Dartmouth a ChatGPT: 66 años para llegar a una máquina que supiera charlar
 ### 66 años de historia, dos inviernos de fracaso público y la convergencia final de cuatro piezas dispersas: cómo llegamos, en 2022, a una máquina que por fin supo conversar.
 
-*por Camilo — Agosto 14 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — Agosto 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

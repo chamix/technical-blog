@@ -9,10 +9,9 @@ seriesPart: 3
 
 ![Un auto de juguete a cuerda, sin la llave puesta, recorriendo solo una mini ciudad futurista nocturna iluminada de neón, dejando una estela de luz que conecta con otros autos idénticos estacionados](../../../assets/my-articles/parte-3-no-todas-las-ia-son-lo-mismo/no-todas-las-ia-son-lo-mismo-parte-3-header.webp)
 
-# Cuando la herramienta deja de sugerir y empieza a actuar
 ### Cierre de la serie: qué es técnicamente un agente, los patrones que le dan forma, el protocolo que los interconecta, y los riesgos de gobernanza que ya están documentados.
 
-*por Camilo — Agosto 14 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — Agosto 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 
