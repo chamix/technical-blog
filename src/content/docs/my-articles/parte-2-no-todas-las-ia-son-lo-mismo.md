@@ -1,7 +1,7 @@
 ---
 title: "No es el modelo, es lo que le construís alrededor"
 description: "Qué es realmente un LLM, por qué un modelo no es lo mismo que la herramienta que lo envuelve, y qué estás pagando en realidad cuando pagás por token."
-publishDate: 2026-XX-XX
+publishDate: 2026-08-15
 tags: ["ai", "genai", "explainer"]
 series: "No todas las IA son lo mismo"
 seriesPart: 2

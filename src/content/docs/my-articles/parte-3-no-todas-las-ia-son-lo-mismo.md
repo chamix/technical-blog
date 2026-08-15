@@ -1,7 +1,7 @@
 ---
 title: "Cuando la herramienta deja de sugerir y empieza a actuar"
 description: "Cierre de la serie: qué es técnicamente un agente, los patrones que le dan forma, el protocolo que los interconecta, y los riesgos de gobernanza que ya están documentados."
-publishDate: 2026-XX-XX
+publishDate: 2026-08-15
 tags: ["ai", "genai", "architecture", "explainer"]
 series: "No todas las IA son lo mismo"
 seriesPart: 3

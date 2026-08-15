@@ -1,7 +1,7 @@
 ---
 title: "De Dartmouth a ChatGPT: 66 años para llegar a una máquina que supiera charlar"
 description: "66 años de historia, dos inviernos de fracaso público y la convergencia final de cuatro piezas dispersas: cómo llegamos, en 2022, a una máquina que por fin supo conversar."
-publishDate: 2026-XX-XX
+publishDate: 2026-08-15
 tags: ["ai", "genai", "explainer"]
 series: "No todas las IA son lo mismo"
 seriesPart: 1
