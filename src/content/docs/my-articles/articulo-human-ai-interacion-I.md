@@ -5,6 +5,8 @@ publishDate: 2026-07-04
 tags: ["ai", "genai", "opinion"]
 series: "La Mutación Epistemológica de la Interacción Humano-IA"
 seriesPart: 1
+sidebar:
+  order: 4
 ---
 
 ![Una notebook con la pantalla en blanco, sola en medio de un desierto al amanecer, con huellas de pisadas que se detienen frente a ella](../../../assets/my-articles/articulo-human-ai-interacion-I/ART-004-header.webp)

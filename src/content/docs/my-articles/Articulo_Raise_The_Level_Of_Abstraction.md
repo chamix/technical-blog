@@ -2,6 +2,8 @@
 title: "Raise the Level of Abstraction: Del Assembler a la Inteligencia Artificial Generativa"
 description: "Un recorrido histórico de la abstracción en software, del Assembler a la IA generativa, y cómo construí una célula de agentes bajo Clean Architecture y TDD para probarlo."
 publishDate: 2026-06-15
+sidebar:
+  order: 1
 tags: ["ai", "genai", "architecture", "nodejs", "explainer"]
 ---
 

@@ -5,6 +5,8 @@ publishDate: 2026-08-15
 tags: ["ai", "genai", "architecture", "explainer"]
 series: "No todas las IA son lo mismo"
 seriesPart: 3
+sidebar:
+  order: 11
 ---
 
 ![Un auto de juguete a cuerda, sin la llave puesta, recorriendo solo una mini ciudad futurista nocturna iluminada de neón, dejando una estela de luz que conecta con otros autos idénticos estacionados](../../../assets/my-articles/parte-3-no-todas-las-ia-son-lo-mismo/no-todas-las-ia-son-lo-mismo-parte-3-header.webp)

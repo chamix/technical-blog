@@ -2,6 +2,8 @@
 title: "¿Quién gobierna el desgobierno de la IA?"
 description: "Tres equipos de ingeniería llegaron al mismo patrón de agentes de IA sin coordinarse entre sí. Lo que esa coincidencia revela sobre cómo las organizaciones gobiernan —o no— sus sistemas de agentes."
 publishDate: 2026-06-16
+sidebar:
+  order: 2
 tags: ["ai", "genai", "architecture", "opinion"]
 ---
 

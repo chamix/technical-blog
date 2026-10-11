@@ -5,6 +5,8 @@ publishDate: 2026-07-04
 tags: ["ai", "genai", "opinion"]
 series: "La Mutación Epistemológica de la Interacción Humano-IA"
 seriesPart: 3
+sidebar:
+  order: 6
 ---
 
 ![Unos auriculares apoyados sobre un mapa de papel abierto en un peñasco flotando sobre un mar de nubes, con los bordes del mapa disolviéndose en ondas de sonido](../../../assets/my-articles/articulo-human-ai-interacion-III/ART-006-header.webp)

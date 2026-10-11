@@ -5,6 +5,8 @@ publishDate: 2026-07-04
 tags: ["ai", "genai", "opinion"]
 series: "La Mutación Epistemológica de la Interacción Humano-IA"
 seriesPart: 4
+sidebar:
+  order: 7
 ---
 
 ![Una caja de texto rectangular e iluminada flotando sobre un tablero infinito tipo ajedrez, rodeada de bloques geométricos simples hundidos a medio construir](../../../assets/my-articles/articulo-human-ai-interacion-IV/ART-007-header.webp)

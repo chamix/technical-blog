@@ -5,7 +5,8 @@ publishDate: 2026-08-15
 tags: ["ai", "genai", "explainer"]
 series: "No todas las IA son lo mismo"
 seriesPart: 1
-
+sidebar:
+  order: 9
 ---
 
 ![Un robot de juguete vintage parado en un prado soleado, con el pecho abierto del que florece una flor con pétalos veteados de líneas de circuito brillante](../../../assets/my-articles/parte-1-no-todas-las-ia-son-lo-mismo/no-todas-las-ia-son-lo-mismo-parte-1-header.webp)

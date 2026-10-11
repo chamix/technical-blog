@@ -2,6 +2,8 @@
 title: "El sprint cero: de oráculo a compilador de intención"
 description: "Por qué la diferencia entre usar la IA como oráculo o como compilador de intención no es técnica: es un criterio de ingeniería tan viejo como el sprint cero."
 publishDate: 2026-06-21
+sidebar:
+  order: 3
 tags: ["ai", "genai", "architecture", "platform-engineering", "opinion"]
 ---
 

@@ -5,6 +5,8 @@ publishDate: 2026-09-19
 tags: [ai, genai, opinion, case-study]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 3
+sidebar:
+  order: 14
 ---
 
 ![Ilustración 3D estilo juguete de un mapache que congela el paso al levantar una cinta de precaución hacia un atajo brillante, mientras el camino con la lista de verificación queda atrás](../../../assets/my-articles/post-3-md-view-the-story/post-3-md-view-the-story.webp)

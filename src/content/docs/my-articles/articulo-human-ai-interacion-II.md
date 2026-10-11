@@ -5,6 +5,8 @@ publishDate: 2026-07-04
 tags: ["ai", "genai", "opinion"]
 series: "La Mutación Epistemológica de la Interacción Humano-IA"
 seriesPart: 2
+sidebar:
+  order: 5
 ---
 
 ![Una zapatilla de running suspendida en el aire sobre un sendero de montaña, dejando atrás una estela de cables y ondas de sonido enredadas en vez de polvo](../../../assets/my-articles/articulo-human-ai-interacion-II/ART-005-header.webp)

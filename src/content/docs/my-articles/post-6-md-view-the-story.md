@@ -5,6 +5,8 @@ publishDate: 2026-09-26
 tags: ["ai", "genai", "architecture", "devops", "case-study"]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 6
+sidebar:
+  order: 17
 ---
 
 ![Un juguete envuelto avanza solo por una cinta transportadora hacia una puerta abierta e iluminada, dejando atrás un taller de juguetes en penumbra.](../../../assets/my-articles/post-6-md-view-the-story/post-6-md-view-the-story.webp)

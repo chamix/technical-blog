@@ -5,6 +5,8 @@ publishDate: 2026-09-20
 tags: ["ai", "genai", "architecture", "case-study"]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 5
+sidebar:
+  order: 16
 ---
 
 ![Auto de juguete frente a un semáforo en verde; la calle detrás se vuelve gris y agrietada.](../../../assets/my-articles/post-5-md-view-the-story/post-5-md-view-the-story.webp)

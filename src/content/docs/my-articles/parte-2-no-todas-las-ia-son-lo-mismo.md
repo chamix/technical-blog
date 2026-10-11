@@ -5,6 +5,8 @@ publishDate: 2026-08-15
 tags: ["ai", "genai", "explainer"]
 series: "No todas las IA son lo mismo"
 seriesPart: 2
+sidebar:
+  order: 10
 ---
 
 ![Una máquina expendedora de juguete vacía por dentro, con fichas doradas cayendo en espiral por una rampa hacia la salida, bajo luz cálida](../../../assets/my-articles/parte-2-no-todas-las-ia-son-lo-mismo/no-todas-las-ia-son-lo-mismo-parte-2-header.webp)

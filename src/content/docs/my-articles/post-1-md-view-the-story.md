@@ -5,6 +5,8 @@ publishDate: [9/6/2026]
 tags: ["ai", "genai", "architecture", "case-study"]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 1
+sidebar:
+  order: 12
 ---
 
 ![Tres ingenieros de dibujos animados reparan un auto de Fórmula 1 hecho de golosinas.](../../../assets/my-articles/post-1-apertura-dia-0/post-1-md-view-the-story.webp)

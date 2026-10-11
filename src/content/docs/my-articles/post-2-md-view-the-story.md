@@ -5,6 +5,8 @@ publishDate: 2026-09-12
 tags: ["ai", "genai", "governance", "security", "case-study"]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 2
+sidebar:
+  order: 13
 ---
 
 ![Ilustración 3D estilo juguete de un espía encubierto observando en secreto a un grupo de ovejas que planea el lanzamiento de un cohete espacial.](../../../assets/my-articles/post-2-md-view-the-story/post-2-md-view-the-story.webp)

@@ -2,6 +2,8 @@
 title: "Arqueología de infraestructura: RE con un LLM de copiloto"
 description: "Por qué conectar un LLM a una infraestructura sin documentar no es una práctica nueva, sino una disciplina de 35 años con una fuente de hipótesis distinta."
 publishDate: 2026-07-11
+sidebar:
+  order: 8
 tags: ["ai", "genai", "architecture", "explainer"]
 ---
 

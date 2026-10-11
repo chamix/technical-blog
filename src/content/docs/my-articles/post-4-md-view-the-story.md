@@ -5,6 +5,8 @@ publishDate: 2026-09-19
 tags: [ai, genai, architecture, case-study]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 4
+sidebar:
+  order: 15
 ---
 
 ![Ilustración de juguete de nueve búhos sellando 'OK' en una cinta transportadora, mientras un zorro descubre una puerta cuadrada cubierta de polvo, nunca usada.](../../../assets/my-articles/post-4-md-view-the-story/post-4-md-view-the-story.webp)
