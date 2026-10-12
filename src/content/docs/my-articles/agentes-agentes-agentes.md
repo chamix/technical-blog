@@ -26,7 +26,8 @@ Septiembre de 2000. Steve Ballmer, recién asumido como CEO de Microsoft, sube a
   title="Steve Ballmer — Developers! Developers! Developers! (Windows 2000 Developers' Conference)"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
+  allowfullscreen
+  loading="lazy">
 </iframe>
 
 Minutos antes había planteado "la pregunta de los 64.000 dólares" — un modismo tomado de un concurso televisivo de los años 50, sinónimo de "la pregunta del millón" — para introducir el tema que de verdad le importaba: la estrategia .NET, la gran apuesta de Microsoft por atraer desarrolladores 'externos'.
