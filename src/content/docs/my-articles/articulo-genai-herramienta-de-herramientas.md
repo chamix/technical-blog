@@ -7,6 +7,8 @@ sidebar:
 tags: ["ai", "genai", "architecture", "platform-engineering", "opinion"]
 ---
 
+![Guerrero anime canaliza energía que se cristaliza en un diagrama de arquitectura, no en caos."](../../../assets/my-articles/articulo-genai-herramienta-de-herramientas/genai-herramienta-de-herramientas.webp)
+
 ### Por qué la diferencia entre usar la IA como oráculo o como compilador de intención no es técnica: es un criterio de ingeniería tan viejo como el sprint cero.
 
 *por Camilo — Junio 21 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
