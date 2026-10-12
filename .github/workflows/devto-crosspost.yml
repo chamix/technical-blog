@@ -1,0 +1,48 @@
+# .github/workflows/devto-crosspost.yml
+# Cross-post MANUAL a dev.to: se dispara solo desde Actions > "Run workflow".
+# Crea un BORRADOR; vos lo revisás en dev.to y apretás "Publish" a mano.
+name: Cross-post to dev.to (manual, draft)
+
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Artículo a cross-postear (ej: src/content/docs/my-articles/parte-1-no-todas-las-ia-son-lo-mismo.md)'
+        required: true
+        type: string
+      update:
+        description: 'Actualizar si ya existe en dev.to (pisa el cuerpo; no des-publica)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  crosspost:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Crear borrador en dev.to
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          # Los inputs viajan por env (no interpolados en el script) para evitar inyección.
+          INPUT_FILE: ${{ inputs.file }}
+          INPUT_UPDATE: ${{ inputs.update }}
+        run: |
+          case "$INPUT_FILE" in
+            src/content/docs/my-articles/*.md) ;;
+            *) echo "::error::El archivo debe estar en src/content/docs/my-articles/ y terminar en .md"; exit 1 ;;
+          esac
+          case "$INPUT_FILE" in *..*) echo "::error::Ruta inválida"; exit 1 ;; esac
+          [ -f "$INPUT_FILE" ] || { echo "::error::No existe $INPUT_FILE"; exit 1; }
+          ARGS=(--apply)
+          [ "$INPUT_UPDATE" = "true" ] && ARGS+=(--update)
+          # El blog ya está deployado: la URL canónica debe responder 200 (sin espera).
+          node scripts/publish-to-devto.cjs "$INPUT_FILE" "${ARGS[@]}"
