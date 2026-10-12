@@ -42,6 +42,36 @@ const jsonLd = isArticle
 			...(headerImageSrc ? { image: new URL(headerImageSrc, Astro.site).href } : {}),
 		}
 	: undefined;
+
+// ── SEO: ajustes sobre los <meta> que genera Starlight ──────────────────────
+// Starlight emite og:type="article" en TODAS las páginas y no emite og:image.
+// `starlightRoute.head` es el array que <Default> renderiza; lo modificamos antes.
+const head = Astro.locals.starlightRoute.head;
+const setMeta = (key: 'property' | 'name', name: string, content: string) => {
+	const i = head.findIndex((h) => h.tag === 'meta' && h.attrs?.[key] === name);
+	const tag = { tag: 'meta' as const, attrs: { [key]: name, content }, content: '' };
+	if (i >= 0) head[i] = tag;
+	else head.push(tag);
+};
+setMeta('property', 'og:type', isArticle ? 'article' : 'website');
+if (Astro.site) {
+	const ogImage = headerImageSrc ? new URL(headerImageSrc, Astro.site).href : undefined;
+	if (ogImage) {
+		setMeta('property', 'og:image', ogImage);
+		setMeta('name', 'twitter:image', ogImage);
+		const i = head.findIndex((h) => h.tag === 'meta' && h.attrs?.name === 'twitter:card');
+		if (i >= 0) head[i] = { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' }, content: '' };
+	}
+}
+if (isArticle && entry.data.publishDate) {
+	setMeta('property', 'article:published_time', entry.data.publishDate.toISOString());
+	setMeta('property', 'article:author', 'Camilo');
+}
+head.push({
+	tag: 'link',
+	attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'Technical Logbook', href: '/rss.xml' },
+	content: '',
+});
 ---
 
 <Default {...Astro.props} />
