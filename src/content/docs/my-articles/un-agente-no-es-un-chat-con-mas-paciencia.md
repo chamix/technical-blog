@@ -3,15 +3,17 @@ title: "Un agente no es un chat con más paciencia"
 description: "Subagentes, Skills, MCP, hooks y calibración de modelo: cómo Claude convierte un LLM que predice el siguiente token en algo que percibe, decide y actúa — pieza por pieza."
 publishDate: 2026-10-17
 tags: ["ai", "agentes", "genai", "architecture"]
-series: "agents-in-deep!"
+series: "agentes-en-profundidad"
 seriesPart: 2
+sidebar:
+  order: 19
 ---
 
 ![Un técnico ensamblando un complejo sistema de relojería con componentes electrónicos, mientras varias personas lo observan y evalúan en un laboratorio muy iluminado](../../../assets/my-articles/un-agente-no-es-un-chat-con-mas-paciencia/un-agente-no-es-un-chat-con-mas-paciencia_post-2.webp)
 
 ### Subagentes, Skills, MCP, hooks y calibración de modelo: cómo Claude convierte un LLM que predice el siguiente token en algo que percibe, decide y actúa — pieza por pieza.
 
-*por Camilo — Octubre 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — Octubre 17 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 
