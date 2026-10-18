@@ -7,6 +7,8 @@ sidebar:
 tags: ["ai", "genai", "architecture", "nodejs", "explainer"]
 ---
 
+![IA como el Nuevo Layer de Abstracción](../../../assets/my-articles/Articulo_Raise_The_Level_Of_Abstraction/5-layer-ai-workflows.webp)
+
 ### Un recorrido histórico de la abstracción en software, del Assembler a la IA generativa, y cómo construí una célula de agentes bajo Clean Architecture y TDD para probarlo.
 
 *por Camilo — Junio 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
