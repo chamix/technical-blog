@@ -3,7 +3,7 @@ title: "¡Agentes, Agentes, Agentes!"
 description: "De Ballmer gritando 'developers' en el año 2000 a la fiebre actual de los agentes de IA: qué dice la historia académica, y cómo lo están implementando Claude, Copilot y Gemini."
 publishDate: 2026-10-11
 tags: ["ai", "agentes", "genai", "historia"]
-series: "agentes-en-profundidad"
+series: "Agentes en profundidad"
 seriesPart: 1
 sidebar:
   order: 18

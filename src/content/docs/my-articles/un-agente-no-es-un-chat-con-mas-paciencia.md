@@ -3,7 +3,7 @@ title: "Un agente no es un chat con más paciencia"
 description: "Subagentes, Skills, MCP, hooks y calibración de modelo: cómo Claude convierte un LLM que predice el siguiente token en algo que percibe, decide y actúa — pieza por pieza."
 publishDate: 2026-10-17
 tags: ["ai", "agentes", "genai", "architecture"]
-series: "agentes-en-profundidad"
+series: "Agentes en profundidad"
 seriesPart: 2
 sidebar:
   order: 19

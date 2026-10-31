@@ -3,7 +3,7 @@ title: "La autonomía cambia la pregunta de seguridad"
 description: "Permisos, audit trail y human-in-the-loop: las tres palancas que hoy existen para gobernar a un agente que actúa sin pedir confirmación en cada paso — y por qué ninguna alcanza sola."
 publishDate: 2026-10-17
 tags: ["ai", "agentes", "genai", "security", "governance"]
-series: "agentes-en-profundidad"
+series: "Agentes en profundidad"
 seriesPart: 3
 sidebar:
   order: 20
