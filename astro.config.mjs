@@ -28,7 +28,7 @@ const seriesIndexSlugs = new Map([
 	['La Mutación Epistemológica de la Interacción Humano-IA', 'interaccion-humano-ia'],
 	['No todas las IA son lo mismo', 'no-todas-las-ia-son-lo-mismo'],
 	['md-view app: de 0 a release con agentic AI', 'md-view-app'],
-	['agentes-en-profundidad', 'agentes-en-profundidad'],
+	['Agentes en profundidad', 'agentes-en-profundidad'],
 ]);
 
 function parseArticleFrontmatter(file) {
