@@ -83,13 +83,12 @@ const articlesSidebarItems = sidebarEntries.map((e) => {
 		return { label: e.data.title, link: `/my-articles/${e.data.slug}/` };
 	}
 	const indexSlug = seriesIndexSlugs.get(e.label);
-	const items = e.parts.map((p) => ({ label: `${p.seriesPart}. ${p.title}`, link: `/my-articles/${p.slug}/` }));
-
-	// Si existe el índice, usa su link como el link principal de la serie
+	const items = [];
 	if (indexSlug) {
-		return { label: e.label, link: `/series/${indexSlug}/`, collapsed: true, items };
+		items.push({ label: '📖 Índice de la serie', link: `/series/${indexSlug}/` });
 	}
-	return { label: e.label, collapsed: true, items };
+	items.push(...e.parts.map((p) => ({ label: `${p.seriesPart}. ${p.title}`, link: `/my-articles/${p.slug}/` })));
+	return { label: e.label, collapsed: false, items };
 });
 
 // https://astro.build/config
