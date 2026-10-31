@@ -33,6 +33,7 @@ const jsonLd = isArticle
 			headline: entry.data.title,
 			description: entry.data.description,
 			...(entry.data.publishDate ? { datePublished: entry.data.publishDate.toISOString() } : {}),
+			...(entry.data.lastUpdated instanceof Date ? { dateModified: entry.data.lastUpdated.toISOString() } : {}),
 			author: {
 				'@type': 'Person',
 				name: 'Camilo',
@@ -66,6 +67,9 @@ if (Astro.site) {
 if (isArticle && entry.data.publishDate) {
 	setMeta('property', 'article:published_time', entry.data.publishDate.toISOString());
 	setMeta('property', 'article:author', 'Camilo');
+}
+if (isArticle && entry.data.lastUpdated instanceof Date) {
+	setMeta('property', 'article:modified_time', entry.data.lastUpdated.toISOString());
 }
 head.push({
 	tag: 'link',
