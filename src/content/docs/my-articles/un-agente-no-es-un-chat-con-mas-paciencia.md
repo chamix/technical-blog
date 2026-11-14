@@ -13,7 +13,7 @@ sidebar:
 
 ### Subagentes, Skills, MCP, hooks y calibración de modelo: cómo Claude convierte un LLM que predice el siguiente token en algo que percibe, decide y actúa — pieza por pieza.
 
-*por Camilo — Octubre 17 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 17 de octubre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

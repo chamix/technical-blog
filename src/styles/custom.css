@@ -7,7 +7,7 @@
   align-items: center !important;
   text-align: center !important;
   position: relative;
-  padding: 1rem 2rem 4rem 2rem !important; /* Espacio superior pegado arriba */
+  padding: 1rem 2rem 1.5rem 2rem !important; /* Espacio superior pegado arriba; inferior reducido para acercar el contenido */
   overflow: hidden;
 }
 
@@ -46,4 +46,9 @@
 /* Centrado de la caja de botones (actions) */
 .hero .actions {
   justify-content: center !important;
+}
+
+/* Acerca el contenido de la home al hero (Starlight agrega un margin-top al primer bloque) */
+.hero + .sl-markdown-content {
+  margin-top: 0 !important;
 }

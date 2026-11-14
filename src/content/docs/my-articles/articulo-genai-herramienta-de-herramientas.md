@@ -11,7 +11,7 @@ tags: ["ai", "genai", "architecture", "platform-engineering", "opinion"]
 
 ### Por qué la diferencia entre usar la IA como oráculo o como compilador de intención no es técnica: es un criterio de ingeniería tan viejo como el sprint cero.
 
-*por Camilo — Junio 21 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 21 de junio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 Hace unas semanas necesitaba un reporte. Nada glamoroso: un resumen de work items de Azure DevOps para entender en qué estaba parado un equipo. Abrí el chat, le pedí a la IA que se conectara a la organización a través de un MCP, trajera la data y armara el reporte. Treinta segundos después tenía exactamente lo que pedí.
 
 Podría haber terminado ahí. Honestamente, casi lo hice.

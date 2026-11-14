@@ -11,7 +11,7 @@ tags: ["ai", "genai", "architecture", "nodejs", "explainer"]
 
 ### Un recorrido histórico de la abstracción en software, del Assembler a la IA generativa, y cómo construí una célula de agentes bajo Clean Architecture y TDD para probarlo.
 
-*por Camilo — Junio 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 15 de junio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 ## Introducción: De la Práctica Corporativa a la Memoria Colectiva
 
 Últimamente estuve trabajando de manera más intensa y sistemática con las nuevas herramientas de IA. Luego de una serie de cursos mandatorios que tuve que hacer en la empresa en la que trabajo, comencé a utilizar Gemini para desarrollo. En mi caso, decidí hacer un proyecto para "aprender haciendo" (*learn by doing*), que es una de las formas en las que a mí mejor se me da aprender algo nuevo. 

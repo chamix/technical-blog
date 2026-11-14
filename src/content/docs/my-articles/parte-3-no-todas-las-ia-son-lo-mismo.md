@@ -13,7 +13,7 @@ sidebar:
 
 ### Cierre de la serie: qué es técnicamente un agente, los patrones que le dan forma, el protocolo que los interconecta, y los riesgos de gobernanza que ya están documentados.
 
-*por Camilo — Agosto 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 15 de agosto de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

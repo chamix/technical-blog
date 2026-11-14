@@ -13,7 +13,7 @@ sidebar:
 
 ### Permisos, audit trail y human-in-the-loop: las tres palancas que hoy existen para gobernar a un agente que actúa sin pedir confirmación en cada paso — y por qué ninguna alcanza sola.
 
-*por Camilo — Octubre 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 17 de octubre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

@@ -13,7 +13,7 @@ sidebar:
 
 ### Un cuaderno de bitácora sobre el momento exacto en que un prototipo que empieza a funcionar bien tienta con aflojar la disciplina que lo sostiene.
 
-*por Camilo — Septiembre 19 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 19 de septiembre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 En esta serie venimos reconstruyendo, tarea por tarea, cómo se construyó md-view bajo un sistema de gobernanza con agentes de IA: un Lead que diseña, un ingeniero que implementa, un revisor independiente que verifica antes de dar el visto bueno. Hasta ahora, cada capítulo tuvo un bug como protagonista. Este no. Este capítulo es sobre un momento en el que el bug casi lo cometo yo.
 

@@ -13,7 +13,7 @@ sidebar:
 
 ### Por qué la voz, que promete aliviar la fatiga de tipear con la IA, termina generando más trabajo del que ahorra en tareas de co-pensamiento complejo.
 
-*por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 4 de julio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

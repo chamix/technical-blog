@@ -1,7 +1,7 @@
 ---
 title: "md-view: el comienzo"
 description: "Cómo un sistema de agentes de IA construido para vigilarse a sí mismo falló dos veces antes de escribir una sola línea de producto — y por qué un test en verde no alcanzó para probar nada."
-publishDate: [9/6/2026]
+publishDate: 2026-09-06
 tags: ["ai", "genai", "architecture", "case-study"]
 series: "md-view app: de 0 a release con agentic AI"
 seriesPart: 1
@@ -13,7 +13,7 @@ sidebar:
 
 ### Cómo un sistema de agentes de IA construido para vigilarse a sí mismo falló dos veces antes de escribir una sola línea de producto — y por qué un test en verde no alcanzó para probar nada.
 
-*por Camilo — [Septiembre 6 2026] · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 6 de septiembre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ## Cuatro intentos, cuatro veces en verde, sobre código roto
 

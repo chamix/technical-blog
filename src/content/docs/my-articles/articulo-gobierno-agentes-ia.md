@@ -11,7 +11,7 @@ tags: ["ai", "genai", "architecture", "opinion"]
 
 ### Tres equipos de ingeniería, el mismo patrón arquitectónico, y ningún plan en común — lo que eso revela sobre cómo las organizaciones están (o no están) gobernando sus sistemas de agentes.
 
-*por Camilo — Junio 16 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 16 de junio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

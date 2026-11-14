@@ -13,7 +13,7 @@ sidebar:
 
 ### 66 años de historia, dos inviernos de fracaso público y la convergencia final de cuatro piezas dispersas: cómo llegamos, en 2022, a una máquina que por fin supo conversar.
 
-*por Camilo — Agosto 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 15 de agosto de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

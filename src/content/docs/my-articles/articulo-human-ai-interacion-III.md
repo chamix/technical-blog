@@ -13,7 +13,7 @@ sidebar:
 
 ### La falacia de la multitarea aplicada a la inteligencia artificial: por qué escuchar en vez de leer te hace perder justo lo que fuiste a buscar.
 
-*por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 4 de julio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

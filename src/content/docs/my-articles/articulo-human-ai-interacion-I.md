@@ -13,7 +13,7 @@ sidebar:
 
 ### La paradoja detrás del co-pensamiento con modelos de lenguaje: por qué la promesa de 'escribir menos' resultó ser exactamente al revés.
 
-*por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 4 de julio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

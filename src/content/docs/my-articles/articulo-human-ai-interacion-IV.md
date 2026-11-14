@@ -13,7 +13,7 @@ sidebar:
 
 ### Cierre de la serie: qué deberían hacer las interfaces de IA con todo lo que aprendimos sobre escribir, dictar y escuchar — y la pregunta incómoda que queda abierta.
 
-*por Camilo — Julio 4 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 4 de julio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

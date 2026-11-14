@@ -13,7 +13,7 @@ sidebar:
 
 ### Qué es realmente un LLM, por qué un modelo no es lo mismo que la herramienta que lo envuelve, y qué estás pagando en realidad cuando pagás por token.
 
-*por Camilo — Agosto 15 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 15 de agosto de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

@@ -13,7 +13,7 @@ sidebar:
 
 ### De Ballmer gritando "developers" en el año 2000 a la fiebre actual de los agentes de IA: qué dice la historia académica, y cómo lo están implementando Claude, Copilot y Gemini.
 
-*por Camilo — Octubre 11 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 11 de octubre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

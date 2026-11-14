@@ -9,7 +9,7 @@ tags: ["ai", "genai", "llm", "case-study"]
 
 ### Un agente sin contexto es un usuario final barato, repetible y medible. Cómo lo aislé, qué medí y qué falló en mi propio arnés al probar un CLI.
 
-*por Camilo — Noviembre 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 14 de noviembre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

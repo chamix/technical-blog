@@ -11,7 +11,7 @@ tags: ["ai", "genai", "architecture", "explainer"]
 
 ### Por qué conectar un LLM a una infraestructura sin documentar no es una práctica nueva, sino una disciplina de 35 años con una fuente de hipótesis distinta.
 
-*por Camilo — Julio 11 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 11 de julio de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

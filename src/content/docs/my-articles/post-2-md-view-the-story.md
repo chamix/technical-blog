@@ -13,7 +13,7 @@ sidebar:
 
 ### Cuando el subagente "read-only" del sistema de gobernanza descubre, a los golpes, que ser de solo lectura era una etiqueta y no un permiso.
 
-*por Camilo — Septiembre 12 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 12 de septiembre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ---
 

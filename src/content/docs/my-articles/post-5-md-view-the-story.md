@@ -13,7 +13,7 @@ sidebar:
 
 ### Una decisión de arquitectura prolijamente documentada invalidó en silencio dos features que no tenían nada que ver entre sí — y encontrarlo a tiempo no fue cuestión de suerte.
 
-*por Camilo — 2026-09-20 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
+*por Camilo — 20 de septiembre de 2026 · [LinkedIn](https://www.linkedin.com/in/ernestocamilovera/)*
 
 ## Una línea de código, dos decisiones cuidadas
 
