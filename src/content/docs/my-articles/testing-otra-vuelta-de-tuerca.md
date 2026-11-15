@@ -15,7 +15,7 @@ tags: ["ai", "genai", "llm", "case-study"]
 
 Cuatro agentes recibieron la misma regla de juego: construir algo con una herramienta que no conocían, usando únicamente lo que está publicado, el paquete en el registro y su README. Los cuatro terminaron. Los cuatro pasaron las verificaciones. Y ninguno llegó ahí por el camino que la documentación recomendaba.
 
-La herramienta bajo prueba es stackfold, un CLI de scaffolding con plugins que mantengo yo. Que funcione para quien la escribió dice poco; quería saber si funciona para alguien que solo tiene el paquete y su README. Para eso necesitaba un usuario externo, repetible y barato, y un agente de IA sin contexto previo cumple las tres condiciones, siempre que se lo aísle con cuidado.
+La herramienta bajo prueba es [stackfold](https://www.npmjs.com/package/stackfold), un CLI de scaffolding con plugins que mantengo yo (probé la versión 2.3.1). Que funcione para quien la escribió dice poco; quería saber si funciona para alguien que solo tiene el paquete y su README. Para eso necesitaba un usuario externo, repetible y barato, y un agente de IA sin contexto previo cumple las tres condiciones, siempre que se lo aísle con cuidado.
 
 Lo que se les pidió construir es un plugin de stackfold, es decir, un generador que, a partir de unas preguntas, crea un proyecto nuevo en disco. Cada agente recibió una especificación distinta:
 
@@ -111,7 +111,7 @@ La última fila es la parte más valiosa del diseño. Una misma queja puede ser 
 
 Una celda de esa tabla merece cuenta aparte, porque la cifra de mi informe inicial era incorrecta. Una sesión vacía pesa unos 20–21 mil tokens. Contada una sola vez es el 0,2–0,3 % de la lectura de caché de una corrida, aparentemente despreciable. Pero ese prefijo fijo se relee en cada turno, y multiplicado por los mensajes de cada fase equivale, por estimación, a entre el 10 y el 12 % de la lectura de caché de un build y entre el 20 y el 30 % de la de un review (en tokens, no en dólares, suponiendo que cada mensaje de asistente es una llamada a la API). La suma por mensaje coincide al token con la que reporta la CLI, y ahí se valida el método; lo que cambia la conclusión es la unidad con que se divide.
 
-Para separar señal de ruido usé un umbral: una fricción se promueve a "defecto a atender" cuando aparece en al menos tres sesiones independientes de builder. Es una analogía deliberada con el modelo de Nielsen y Landauer, según el cual cinco usuarios descubren la mayor parte de los problemas de una interfaz[^3]. Mi umbral es una heurística, no una derivación de ese modelo, que además vale para usuarios comparables. Hay una consecuencia incómoda: cuatro sesiones del mismo modelo con el mismo prompt son independientes en contexto, pero probablemente más correlacionadas en comportamiento que cuatro personas. La recurrencia es evidencia, no prueba.
+Para separar señal de ruido usé un umbral: una fricción se promueve a "defecto a atender" cuando aparece en al menos tres sesiones independientes de builder. Es una analogía deliberada con el modelo de Nielsen y Landauer, según el cual cinco usuarios descubren la mayor parte de los problemas de una interfaz[^2]. Mi umbral es una heurística, no una derivación de ese modelo, que además vale para usuarios comparables. Hay una consecuencia incómoda: cuatro sesiones del mismo modelo con el mismo prompt son independientes en contexto, pero probablemente más correlacionadas en comportamiento que cuatro personas. La recurrencia es evidencia, no prueba.
 
 ## El review pesó más que el build
 
@@ -163,10 +163,10 @@ Que tres de cuatro sesiones toparan con el fallo, el cuarto lo anticipara y el r
 | — | *Umbral de recurrencia: 3 sesiones* | | |
 | 5 | `file()` descarta tres opciones de escape que no figuran en su tipo | 2 | producto |
 | 6 | La configuración de proyecto no se busca "hacia arriba", como afirma el README | 2 | producto + docs |
-| 9 | El directorio destino es independiente de `name`; el spec esperaba derivarlo | 2 | producto |
-| 10 | Opciones de Handlebars y operadores de `when` solo documentados en el código | 2 | docs |
-| 7 | `init` sin `--config`/`--answer` en shell no interactiva sale con 130 | 1 | producto |
-| 8 | `init` con un stack inexistente imprime todo el catálogo antes del error | 1 | producto |
+| 7 | El directorio destino es independiente de `name`; el spec esperaba derivarlo | 2 | producto |
+| 8 | Opciones de Handlebars y operadores de `when` solo documentados en el código | 2 | docs |
+| 9 | `init` sin `--config`/`--answer` en shell no interactiva sale con 130 | 1 | producto |
+| 10 | `init` con un stack inexistente imprime todo el catálogo antes del error | 1 | producto |
 | 11 | `--answer` con salto de línea guarda solo la primera línea (sin verificar) | 1 | producto, sin confirmar |
 | 12 | `deriveAnswer` no ofrece la fecha actual, solo el año | 1 | producto |
 
@@ -202,7 +202,7 @@ Declaro los límites de frente porque sostienen la credibilidad del resto.
 
 - **n=3 sin repeticiones.** No hay inferencia entre entregables ni entre modelos, y la variación de costo y tiempo no es atribuible a una causa.
 - **Builder de piso.** Que terminaran indica que el piso de usabilidad es alcanzable, no que sea cómodo: pagaron la fricción con lecturas de código y workarounds. Los números no se extrapolan a modelos más fuertes.
-- **Familia de modelos compartida.** Spec-writer, builder y reviewer son de la misma familia, con posible sesgo de preferencia: la literatura documenta que un LLM evaluador tiende a puntuar mejor sus propias generaciones[^2]. Ese estudio no probó modelos Claude, así que no sé cuánto se traslada, y tampoco probé un reviewer de otra familia.
+- **Familia de modelos compartida.** Spec-writer, builder y reviewer son de la misma familia, con posible sesgo de preferencia: la literatura documenta que un LLM evaluador tiende a puntuar mejor sus propias generaciones[^3]. Ese estudio no probó modelos Claude, así que no sé cuánto se traslada, y tampoco probé un reviewer de otra familia.
 - **Gates parciales.** Un gate fue "n/a" en 2 de 3 corridas y otro solo cubre convenciones estáticas; el resto depende del reviewer.
 - **Aislamiento de contexto, no de efectos.** Los agentes ejecutan Bash sin sandbox bajo mi usuario y trabajan en una carpeta fuera del repo, pero nada los confina allí. Los permisos funcionaron donde se probaron (la CLI denegó un PowerShell para detener procesos por puerto), pero hubo un tropiezo real: en la corrida 3, un `rm` falló con `Device or resource busy` dentro de una línea encadenada, y el resto de los comandos (`npm install`, `npm test`) corrió en la raíz del espacio de trabajo en lugar de en la carpeta de salida. El builder lo anotó como error suyo. El entorno puso la falla, pero el diseño sin sandbox la dejó llegar a otro directorio.
 - **Un solo anfitrión y sistema operativo (Windows 11).**
@@ -215,5 +215,5 @@ Vuelvo al principio. Cuatro agentes terminaron la tarea, y "terminaron" es la m�
 ---
 
 [^1]: Anthropic, "CLI reference", documentación de Claude Code. Describe `--output-format stream-json`, `--no-session-persistence`, `--max-budget-usd` (que compara contra una estimación de costo del lado del cliente, que puede diferir de la factura), `--strict-mcp-config`, `--setting-sources`, `--settings`, `--allowedTools`, `--permission-mode` y `--bare`. <https://code.claude.com/docs/en/cli-reference>
-[^2]: A. Panickssery, S. R. Bowman y S. Feng, "LLM Evaluators Recognize and Favor Their Own Generations", NeurIPS 2024. <https://arxiv.org/abs/2404.13076>
-[^3]: J. Nielsen y T. K. Landauer, "A mathematical model of the finding of usability problems", INTERCHI '93; y J. Nielsen, "Why You Only Need to Test with 5 Users", Nielsen Norman Group. <https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/>
+[^2]: J. Nielsen y T. K. Landauer, "A mathematical model of the finding of usability problems", INTERCHI '93; y J. Nielsen, "Why You Only Need to Test with 5 Users", Nielsen Norman Group. <https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/>
+[^3]: A. Panickssery, S. R. Bowman y S. Feng, "LLM Evaluators Recognize and Favor Their Own Generations", NeurIPS 2024. <https://arxiv.org/abs/2404.13076>
